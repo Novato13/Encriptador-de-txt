@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de txt</title>
+    <!--fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <!--fuente-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <title>Encriptador de txt</title>
 </head>
 <body>
     <header>
-        <div class="Alura-logo">
-            <h1><img src="img/Logologo-alura.png" alt="Logo de alura" class="img-ALURA"></h1>
-        </div>
-    
+        <img src="img/Logologo-alura.png" alt="Logo de alura" class="img_ALURA">
     </header>
 
-    <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
-      
+    <main>
+        <!--animation-->
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>   
+        <!--animation-->
+        <section>
+            <!--Texarea encriptar-->
+            <textarea  class="txtArea_encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            
+            <div>
+                <h1 class="informacion">Solo letras minúsculas y sin acentos</h1>
+            </div>
+            <div class="botones"> <!--botones-->
+
+                <!--push btn encriptar-->
+                <button class="btn_encriptar">Encriptar</button>
+                <!--push btn desencriptar-->
+                <button class="btn_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <!--Texarea desencriptar-->
+            <textarea class="txtArea_Desencriptar" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
      <script src="script.js"></script>
 </body>
 </html>
