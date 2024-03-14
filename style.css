@@ -3,7 +3,7 @@
   font-family: "Madimi One";
   font-weight: 400;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 105%;
 
   }
   /*Animation*/
@@ -20,23 +20,105 @@
    width: 10%;
   }
 
-main{
+main {
   display: flex;
   margin-bottom: 50px;
   margin-left: 100px;
 }
+
+.botones{
+  margin-top: 3em;
+  margin-right: 7px;
+}
+
+.btn_encriptar{
+  background-color: #36d4b2;
+  border: 5px solid #36d4b2;
+  border-radius: 24px;
+  color: #0763d4;
+  cursor: pointer;
+  height: 67px;
+  width: 300px;
+  text-align: left;
   
+}
+
+.btn_encriptar::before{
+  content: "🔐";
+}
+
+.btn_desencriptar{
+  display: block;
+  margin: 15px 0;
+  background-color: #fffeea;
+  border: 5px solid #36d4b2;
+  border-radius: 24px;
+  color: #0763d4;
+  cursor: pointer;
+  height: 67px;
+  width: 300px;
+  text-align: left;
+}
+
+.btn_desencriptar::before{
+  content: "🔓";
+}
+
+
+.copiar{
+  background-color: #fffeea;
+  border: 5px solid #36d4b2;
+  border-radius: 24px;
+  color: #0763d4;
+  cursor: pointer;
+  height: 67px;
+  width: 300px;
+  text-align: left;
+}
+
+.copiar::before{
+  content: "📑";
+}
+
+.informacion{
+  font-size: 15px;
+  color: #495057;
+  margin-top: -380px;
+  text-align: end;
+}
+
+.informacion::before{
+  content: "🞴";
+}
+
 .txtArea_encriptar{
-  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-  border: none;
-  color: #0A3871;
-  margin-top: 90px;
-  text-transform: lowercase;
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 35%, #fffeea 65%);
+  border: none;      /*elimina el borde*/
+  color: #0763d4;  /*color de txt*/
+  margin-top: 90px;  /*margene superior*/
+  text-transform: lowercase;   /*txt en minuscula*/
   }
-  ::placeholder{color: #0A3871;}
-  .txtArea_encriptar:focus{
-  outline: none
+  ::placeholder{color: #0763d4;}  /*Color de la seudoetiqueta*/
+  .txtArea_encriptar:focus{          
+  outline: none                      /*elimina el foco*/
   }
+
+.txtArea_Desencriptar{ 
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 35%, #fffeea 65%);
+  background-image: url("img/pulpo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  margin-left: 15px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+  border: 4px solid rgb(23, 209, 219);
+}
+
+.txtArea_Desencriptar:focus{
+  outline: none;
+}
 
 .ocean { 
     height: 5%;
@@ -81,3 +163,6 @@ main{
     }
   }
   /*Animation*/
+  footer{
+    background: red;
+  }
