@@ -12,15 +12,17 @@ const matriz_code = [
 function btnEncriptar(){ // funcion para el boton encriptar
     const txtEncriptar = cifrar(campo_Texto.value);  //variable que almacena la funcion cifrar con parametro del textarea
     campo_Mensaje.value = txtEncriptar;             //el textarea mostrara el valor de txtEncriptar
-
+    campo_Texto.value = "";
+    campo_Mensaje.style.backgroundImage = "none";
 }
 
 function cifrar(fraseEncriptada){                  //funcion cifrar con parametro 
+    fraseEncriptada = fraseEncriptada.toLowerCase()
     for(let i = 0; i < matriz_code.length; i++){    //ciclo for que recorrera hasta la el valor del tamaño de la matris
         if(fraseEncriptada.includes(matriz_code[i] [0])){   //si en la la variable fraseEncriptada incluie en su matriz n° indice en la posicion 0
             fraseEncriptada = fraseEncriptada.replaceAll(   //la variable será igual a la variable modifiando a la pocicion 0 con la 1
-                matriz_code[i] [0], 
-                matriz_code[i] [1]
+                matriz_code[i] [0],                         //valores que estan
+                matriz_code[i] [1]                          //valores que sustituiran
             );
         }
     }
@@ -33,6 +35,7 @@ function btnDesencriptar(){
 }
 
 function Descifrar(fraseDescifrado){
+    fraseDescifrado = fraseDescifrado.toLowerCase()
     for(let i = 0; i < matriz_code.length; i++){
         if(fraseDescifrado.includes(matriz_code[i] [1])){
             fraseDescifrado = fraseDescifrado.replaceAll(
