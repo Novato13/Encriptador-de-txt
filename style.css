@@ -6,13 +6,16 @@
   line-height: 105%;
 
   }
-  /*Animation*/
+  /**Animation/
   /*best seen at 1500px or less*/
+  
   html, body { height: 100%; }
   body {
     background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
     overflow: hidden;
   }
+  
+  /*Animation*/
   
   .img_ALURA{ /*Logo Alura*/
    padding-top: 15px;
@@ -28,7 +31,7 @@ main {
 
 .botones{
   margin-top: 3em;
-  margin-right: 7px;
+  margin-right: 20px;
 }
 
 .btn_encriptar{
@@ -38,7 +41,7 @@ main {
   color: #0763d4;
   cursor: pointer;
   height: 67px;
-  width: 300px;
+  width: 325px;
   text-align: left;
   
 }
@@ -56,7 +59,7 @@ main {
   color: #0763d4;
   cursor: pointer;
   height: 67px;
-  width: 300px;
+  width: 325px;
   text-align: left;
 }
 
@@ -72,12 +75,27 @@ main {
   color: #0763d4;
   cursor: pointer;
   height: 67px;
-  width: 300px;
+  width: 158px;
   text-align: left;
 }
 
 .copiar::before{
   content: "📑";
+}
+
+.Pegar{
+  background-color: #fffeea;
+  border: 5px solid #36d4b2;
+  border-radius: 24px;
+  color: #0763d4;
+  cursor: pointer;
+  height: 67px;
+  width: 158px;
+  text-align: left;
+}
+
+.Pegar::before{
+  content: "📋";
 }
 
 .informacion{
@@ -107,7 +125,7 @@ main {
   background:radial-gradient(ellipse at center, rgba(255,254,234,1) 35%, #fffeea 65%);
   background-image: url("img/pulpo.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   border-radius: 24px;
   margin-left: 15px;
   margin-top: -50px;
@@ -121,6 +139,23 @@ main {
   outline: none;
 }
 
+#info_desencriptar{
+  margin-top: 300px;
+  font-size: 20px;
+  text-align: center;
+  width: 380px;
+
+  }
+
+.mensaje_en_espera_2{
+  font-size: 16px;
+  text-align: center;
+  width: 240px;
+  margin-left: 80px;
+  color: grey;
+
+}
+  /*Animation*/
 .ocean { 
     height: 5%;
     width:100%;
@@ -139,13 +174,14 @@ main {
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
   }
-  
+   
   .wave:nth-of-type(2) {
     top: -175px;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
     opacity: 1;
   }
-  
+ 
+
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -163,7 +199,26 @@ main {
       transform: translate3d(0,5px,0);
     }
   }
+
+  
   /*Animation*/
+
   footer{
-    background: red;
-  }
+    
+  background-image: url("img/24ae3a446a327998d404729123ea4be0.jpg") transparent; 
+  background-repeat: no-repeat;
+   margin: 940px;
+   height: 100%;
+   display: flex;
+   position:relative;
+   margin-top: 300px;
+}
+.roda_pie{
+  margin-left: 50px;
+}
+
+#btnFooter{
+  cursor: pointer;
+  /*necesito agragar mi footer */
+}
+
