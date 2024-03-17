@@ -14,6 +14,9 @@ function btnEncriptar(){ // funcion para el boton encriptar
     campo_Mensaje.value = txtEncriptar;             //el textarea mostrara el valor de txtEncriptar
     campo_Texto.value = "";
     campo_Mensaje.style.backgroundImage = "none";
+    document.getElementById("info_desencriptar").style.display = "none";
+
+    
 }
 
 function cifrar(fraseEncriptada){                  //funcion cifrar con parametro 
@@ -32,6 +35,7 @@ function cifrar(fraseEncriptada){                  //funcion cifrar con parametr
 function btnDesencriptar(){
     const txtDesencriptar = Descifrar(campo_Texto.value);
     campo_Mensaje.value = txtDesencriptar;
+    campo_Texto.value = "";
 }
 
 function Descifrar(fraseDescifrado){
@@ -46,3 +50,36 @@ function Descifrar(fraseDescifrado){
     }
     return fraseDescifrado;
 }
+
+function copy(){
+    let copyTxt = document.querySelector("#area_Des");
+    copyTxt.select();
+    document.execCommand("copy");
+}
+
+document.querySelector(".copiar").addEventListener("click", copy);
+
+function paste(){    
+    let pasteText = document.querySelector("#area_Des");
+    pasteText.focus();
+    document.execCommand("paste");
+    console.log(pasteText.value);
+    campo_Texto.value = pasteText.value;
+    campo_Mensaje.value = "";
+
+}
+
+document.querySelector(".Pegar").addEventListener("click", paste);
+
+
+
+function setup(){
+    createCanvas(windowWidth, windowHeight);
+  }
+  function draw(){
+    background(150);
+    noStroke();
+    for(let i = 0; i<14000; i++){
+      rect(random(width), random(height), 2, 2);
+    }
+  }
