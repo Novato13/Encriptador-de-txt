@@ -16,13 +16,15 @@
     <header>
         <img src="img/Logologo-alura.png" alt="Logo de alura" class="img_ALURA">
     </header>
-
+   
     <main>
         <!--animation inicio-->
         <div class="ocean">
             <div class="wave"></div>
             <div class="wave"></div>
-        </div>   
+        </div>
+        
+
         <!--animation fin-->
         <div class="botones"> <!--botones-->
             <!--push btn encriptar-->
@@ -30,22 +32,40 @@
             <!--push btn desencriptar-->
             <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             <button class="copiar">Copiar</button>
+            <button class="Pegar">Pegar</button>
         </div>
         <section>         
             <!--Texarea encriptar-->
-            <textarea  class="txtArea_encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea id="area_En" 
+            class="txtArea_encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
                 <h1 class="informacion">Solo letras minúsculas y sin acentos</h1>
             </div>
-
+            
         </section>
         <section>
             <!--Texarea desencriptar-->
-            <textarea class="txtArea_Desencriptar" cols="17" rows="10"></textarea>
+            <textarea id="area_Des" class="txtArea_Desencriptar" cols="17" rows="10"></textarea>
+
+            <div id="info_desencriptar">
+                <h2 class="mensaje_en_espera_1">Ningun Mensaje fue encontrado</h2>
+                <p class="mensaje_en_espera_2">Ingra el texto que deseas encriptar o desencriptar</p>
+            </div>
 
         </section>
+        
 
     </main>
+
+    <footer>
+        <section class="roda_pie">
+            <div>Nombre</div>
+        </section>
+        <dir>
+            <button id="btnFooter">XD</button>
+        </dir>
+    </footer>
+
     <script src="script.js"></script> 
 </body>
 </html>
