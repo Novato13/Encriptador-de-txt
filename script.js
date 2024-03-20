@@ -14,7 +14,7 @@ function btnEncriptar(){ // funcion para el boton encriptar
     campo_Mensaje.value = txtEncriptar;             //el textarea mostrara el valor de txtEncriptar
     campo_Texto.value = "";
     campo_Mensaje.style.backgroundImage = "none";
-    document.getElementById("info_desencriptar").style.display = "none";
+    document.getElementById("info_desencriptar").style.visibility = "hidden";
 }
 
 function cifrar(fraseEncriptada){                  //funcion cifrar con parametro 
@@ -35,7 +35,7 @@ function btnDesencriptar(){
     campo_Mensaje.value = txtDesencriptar;
     campo_Texto.value = "";
     campo_Mensaje.style.backgroundImage = "none";
-    document.getElementById("info_desencriptar").style.display = "none";
+    document.getElementById("info_desencriptar").style.visibility = "hidden";
 }
 
 function Descifrar(fraseDescifrado){
