@@ -128,10 +128,13 @@ main {
 }
 
 .informacion{
+  width: auto;
+  height: auto;
   font-size: 15px;
   color: #495057;
   margin-top: -380px;
-  text-align: end;
+  margin-left: 290px;
+  position: absolute;
 }
 
 .informacion::before{
@@ -151,6 +154,12 @@ main {
   outline: none                      /*elimina el foco*/
 }
 
+.area_descifrador{
+  width: auto;
+  height: auto;
+  margin-left: 16.5em;
+  margin-top: -23em;
+}
 .txtArea_Desencriptar{ 
   background: transparent;
   background-image: url("img/pulpo.png");
@@ -165,7 +174,7 @@ main {
   border: 4px solid rgb(23, 209, 219);
   height:  550px;
   color: #0763d4;
-
+  
 }
 
 .txtArea_Desencriptar:focus{
@@ -181,10 +190,21 @@ main {
 
   }
 
+  .mensaje_en_espera_1, p{
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: 14em;
+    margin-left: 3em;
+  }
+
 .mensaje_en_espera_2{
+  width: auto;
+  height: auto;
   font-size: 16px;
   text-align: center;
   width: 240px;
+  margin-top: 20em;
   margin-left: 80px;
   color: #60a2b4;
 
@@ -240,10 +260,12 @@ main {
 footer{
   background:linear-gradient( #fffeea 4%, #015871 20%);
   height: 100%;
+  width: 100%;
  }
 
 .roda_pie{
   background-image: url(img/background-printed-circuit.webp) transparent;
+  height: 100%;
   display: flex;
   position: absolute;
 }
@@ -251,6 +273,7 @@ footer{
 .links_logos{
   list-style: none;
   position: relative;
+  margin-top: 80px;
 }
 
 .Logo_github{
@@ -261,18 +284,176 @@ footer{
 }
 
 .copyright{
-  margin-top: 80px;
-  margin-left: 200px;
+  width: 35em;
+  height: 3em;
+  margin-top: 90px;
+  margin-left: 210px;
   font-family: "Madimi One";
   color: white;
+}
+
+.lines_txt, p{
+  width: 22em;
+  height: 2em;
   text-align: center;
 }
 
   /*Resposivo*/
   @media screen and (max-width:480px){
-    
-  
+  *{
+      font-size: 20px;
+      line-height: 5%;
   }
+
+    html, body { 
+    height: 480px;
+    width: 480px;
+    display: flex;
+  }
+
+  .logos_header{
+    width: 480px;
+    height: auto;
+    
+  }
+  .img_ALURA{
+    padding: 15px;
+    width: 100px;
+    margin-left: 170px;
+  }
+  .img_ONE{
+    padding: 15px;
+    width: 100px;
+  }
+
+  main{display: flex;}
+
+  .botones{
+    width: 470px;
+    height: 130px;
+    margin-top: 350px;
+    margin-left: -5em;
+    position: absolute;
+  }
+
+  .btn_encriptar{
+    margin-left: 10px;
+    height: 50px;
+    width: 190px;
+  }
+
+  .btn_desencriptar{
+    height: 50px;
+    width: 190px;
+    margin-left: 230px;
+    margin-top: -50px;
+
+  }
+
+  .copiar, .Pegar{
+    height: 50px;
+    width: 110px;
+  }
+  .copiar{
+    margin-right: 10px;
+    margin-left: 90px;
+  }
+  .Pegar{margin-left: 15px;}
+
+  .Areas{
+    width: 470px;
+    height: 933px;
+    margin-left: -5em;
+  }
+
+  .area_cifrador{
+    width: 470px;
+    height: 419px;
+  }
+
+  .txtArea_encriptar{
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .informacion{
+    width: 300px;
+    height: 100px;
+    top: 800px;
+    margin-left: 2em;
+  }  
+
+  .area_descifrador{
+    border: solid transparent;
+    width: 470px;
+    height: 419px;
+    margin-left: 1px;
+  }
+
+  .txtArea_Desencriptar{
+    width: 400px;
+    height: 350px;
+    margin-top: 26em;
+    margin-left: 1px;
+  }
+
+  .info_desencriptar{
+    width: 380px;
+    height: 50px;
+    margin-top: 60em;
+  }
+
+  .mensaje_en_espera_1{
+    width: 300px;
+    height: 30px;
+    margin-top: 24em;
+
+  }
+  .mensaje_en_espera_2{
+    width: 250px;
+    height: 30px;
+    margin-top: 32em;
+  }
+
+  .ocean { 
+
+    background: transparent;
+  }
+  .wave {
+    top: -80px;
+  }
+
+  .wave:nth-of-type(2) {
+    top: -60px;
+  }
+
+  footer{
+    background: #015871;
+    position: absolute;
+    width: 480px;
+    height: 225px;
+    top: 991px;
+  }
+
+  .links_logos{
+    width: 200px;
+    height: 100px;
+    margin-left: 7em;
+    top: -75px;
+  }
+  .copyright{
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    margin-top: 180px;
+    margin-left: 20px;
+    top: -70px;
+  }
+
+
+}
 
 
 
