@@ -149,6 +149,7 @@ main {
   margin-top: 90px;  /*margene superior*/
   text-transform: lowercase;   /*txt en minuscula*/
   text-decoration-line: none; 
+  resize: horizontal;
 }
   ::placeholder{color: #046682;}  /*Color de la seudoetiqueta*/
   .txtArea_encriptar:focus{          
@@ -175,7 +176,7 @@ main {
   border: 4px solid rgb(23, 209, 219);
   height:  550px;
   color: #0763d4;
-  
+  resize: horizontal;
 }
 
 .txtArea_Desencriptar:focus{
@@ -340,22 +341,27 @@ footer{
     height: 50px;
     width: 190px;
     margin-top: 10px;
+    transition: none;
   }
+ 
 
   .btn_desencriptar{
     height: 50px;
     width: 190px;
     margin-left: 230px;
     margin-top: -50px;
+    transition: none;
   }
 
   .copiar, .Pegar{
     height: 50px;
     width: 110px;
+    transition: none;
   }
   .copiar{
     margin-right: 10px;
     margin-left: 90px;
+    transition: none;
   }
   .Pegar{margin-left: 15px;}
 
@@ -368,30 +374,29 @@ footer{
 
   .area_cifrador{
     /*background-color: #015871;*/
-    width: 470px;
+    width: 480px;
     height: 250px;
   }
 
   .txtArea_encriptar{
     /*background-color: #36d4b2;*/
-    width: 100%;
-    height: 70%;
+    width: 480px;
+    height: 80%;
     margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
   }
-
   .informacion{
     width: 300px;
     height: 100px;
-    top: 650px;
+    top: 700px;
     margin-left: 2em;
   }  
 
   .area_descifrador{
     /*background-color: red;*/
     border: solid transparent;
-    width: 470px;
-    height: 250px;
+    width: auto;
+    height: 270px;
     margin-left: 1px;
     margin-top: 120px;
   }
@@ -411,15 +416,18 @@ footer{
   }
 
   .mensaje_en_espera_1{
+    color: #092875;
     width: 300px;
     height: 30px;
-    margin-top: 24em;
+    margin-top: -3em;
 
   }
   .mensaje_en_espera_2{
-    width: 250px;
-    height: 30px;
-    margin-top: 32em;
+    color: #495057;
+    width: 400px;
+    height: 50px;
+    margin-left: 1em;
+    margin-top: -16.5em;
   }
 
   .ocean { 
